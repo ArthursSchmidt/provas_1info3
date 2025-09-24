@@ -7,25 +7,20 @@
     Apresente para o usuário qual o número total de nomes curtos encontrados.
     */
 
-   //entrada
-   let listaNomes = ["Ana", "Carlos", "Beatriz", "Ivo", "Fernanda", "Eder"];
-   const novoNome = prompt(`Insira o novo nome`);
+    //entrada
+    let listaNomes = ["Ana", "Carlos", "Beatriz", "Ivo", "Fernanda", "Eder"];
+    const novoNome = prompt(`Insira o novo nome`);
+    listaNomes.push(novoNome);
     let nomesCurtos = [];
-    
 
-   //processamento
-   for (novoNome of listaNomes){
-       if (novoNome < 5) {
-        novoNome.push(nomesCurtos)
-       }
-       else {
-        novoNome.push(listaNomes)
-       }
-   }
-
+    //processamento
+    for (nome of listaNomes){
+        if (nome.length < 5) {
+            nomesCurtos.push(nome);
+        }
+    }
 
    //saida
-
-   
+   alert(`A quantidade de nomes curtos encontrados é ${nomesCurtos.length}`)
    
 </script>

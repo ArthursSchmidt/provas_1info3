@@ -9,9 +9,16 @@
 
     let idade = [15, 17, 19, 52, 14, 25];
 
-    const novaIdade = Number(prompt(`Qual a sua idade?`));
+    const novaIdade = parseInt(prompt(`Qual a sua idade?`));
 
-    if(isNaN (novaIdade)) {
-        
+    idade.push(novaIdade)
+
+    let maioridades = [];
+    for (item of idade) {
+        if (item > 18) {
+            maioridades.push(idade)
+        }
     }
+
+    alert(maioridades.join(" - "));
 </script>

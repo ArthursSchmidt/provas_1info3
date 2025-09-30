@@ -13,11 +13,17 @@
 
 
     //processamento
-
-    for (let  of contasNao){
-        
+    let contasDepois = [];
+    for (let numero of contasNao){
+        contasDepois.push(contasNao + (contasNao * (juros / 100)));
     }
 
+    let contaTotal = 0;
+    for (let numero of contasDepois) {
+        contaTotal = contaTotal + numero;
+    }
+
+    alert(contaTotal.join(" - "));
 
 </script>
 

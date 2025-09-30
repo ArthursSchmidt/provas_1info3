@@ -12,9 +12,11 @@
     let listaDeCompras = ['pão', 'queijo', 'leite', 'suco'];
     const itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
 
-    for (item of itensDisponiveis){
-        if (itensDisponiveis.includes(item))
+    let conseguir = []
+
+    for (item of listaDeCompras){
+        if (itensDisponiveis.includes(item)) conseguir.push(item)
     }
 
-alert(`${item}`)
+alert(`${conseguir}`);
 </script>

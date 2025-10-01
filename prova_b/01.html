@@ -7,26 +7,16 @@
     Ao final, exiba a soma total dos números pares encontrados.
     */
 
-
     let numeros = [15, 8, 90, 75, 102, 6, 43];
-
-    let novoNumero = parseInt(prompt("Digite um número para adicionar à lista:"));
-
-    if (isNaN(novoNumero)) {
-    alert("Por favor, digite um número válido.");
-    } else {
-
-    numeros.push(novoNumero);
+    numeros.push(Number(prompt(`Digite um numero para adicionar a lista`)));
 
     let somaPares = 0;
-
     for (let numero of numeros) {
         if (numero % 2 === 0) {
-        somaPares += numero;
+            somaPares = somaPares + numero;
         }
     }
 
-    alert(`A soma total dos números pares é: ${somaPares}`);
-    }
+    alert(`A soma de todos os pares é ${somaPares}`);
     
 </script>
